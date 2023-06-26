@@ -14,7 +14,7 @@ variable "organization_teams" {
         name      = string
         members   = optional(list(string), [])
         visibility = optional(string, "organization")
-        organization_access = optional(map(string))
+        organization_access = optional(map(string), {})
     }))
     default     = []
     description = "Manage teams."
