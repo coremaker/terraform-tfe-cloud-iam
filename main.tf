@@ -17,6 +17,8 @@ resource "tfe_team" "main" {
 
     name         = each.key
     organization = var.tfe_organization_name
+    visibility   = each.value["visibility"]
+    organization_access = each.value["organization_access"]
 }
 
 resource "tfe_team_organization_members" "main" {

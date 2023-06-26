@@ -13,6 +13,8 @@ variable "organization_teams" {
     type = list(object({
         name      = string
         members   = optional(list(string), [])
+        visibility = optional(string, "organization")
+        organization_access = optional(map(string))
     }))
     default     = []
     description = "Manage teams."
