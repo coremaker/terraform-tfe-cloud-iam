@@ -15,6 +15,10 @@ variable "organization_teams" {
         members   = optional(list(string), [])
         visibility = optional(string, "organization")
         organization_access = optional(map(string), {})
+        read_access_workspaces    = optional(list(string), [])
+        admin_access_workspaces    = optional(list(string), [])
+        plan_access_workspaces    = optional(list(string), [])
+        write_access_workspaces    = optional(list(string), [])
     }))
     default     = []
     description = "Manage teams."
