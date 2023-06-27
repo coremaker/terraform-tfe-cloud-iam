@@ -19,6 +19,7 @@ variable "organization_teams" {
         admin_access_workspaces    = optional(list(string), [])
         plan_access_workspaces    = optional(list(string), [])
         write_access_workspaces    = optional(list(string), [])
+        custom_access_workspaces = optional(list(map(string)), [])
     }))
     default     = []
     description = "Manage teams."
