@@ -7,6 +7,7 @@ Manage members, teams and access of your Terraform Cloud organization.
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.45.0 |
 
 ## Providers
